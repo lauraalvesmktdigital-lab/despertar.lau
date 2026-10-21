@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir -p _site/public
           cp index.html style.css app.js _site/
-          cp public/ritual-chakra-laringeo.pdf _site/public/
+          cp -R public/. _site/public/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
